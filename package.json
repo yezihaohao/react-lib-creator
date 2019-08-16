@@ -1,6 +1,6 @@
 {
     "name": "react-lib-creator",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "react library cli tool",
     "main": "./lib/index.cjs.js",
     "module": "./lib/index.esm.js",
@@ -31,7 +31,7 @@
     "homepage": "https://github.com/yezihaohao/react-lib-creator#readme",
     "typings": "./lib/index.d.ts",
     "files": [
-        "lib"
+        "lib", "bin"
     ],
     "devDependencies": {
         "jest": "^24.9.0",

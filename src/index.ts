@@ -55,4 +55,10 @@ function copyTemplate(appname: string): void {
     const templatePath: string = path.join(libPath, 'template');
     const projectPath: string = path.resolve(appname)
     fs.copySync(templatePath, projectPath);
+
+    console.log('╔═.' + chalk.red('♥') + '. ═════════════════════════════════════╗');
+    console.log(` ${chalk.green('Success!')}`)
+    console.log(' https://github.com/yezihaohao/react-lib-creator');
+    console.log(' happy coding~~~');
+    console.log('╚══════.' + chalk.red('♥') + '. ════════════════════════════════╝');
 }
