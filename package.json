@@ -1,0 +1,50 @@
+{
+    "name": "react-lib-creator",
+    "version": "1.0.0",
+    "description": "react library cli tool",
+    "main": "./lib/index.cjs.js",
+    "module": "./lib/index.esm.js",
+    "scripts": {
+        "test": "jest",
+        "build": "rollup -c",
+        "dev": "rollup -c -w"
+    },
+    "bin": {
+        "react-lib-creator": "./bin/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yezihaohao/react-lib-creator.git"
+    },
+    "keywords": [
+        "react",
+        "react-lib",
+        "cli",
+        "tool",
+        "rollup"
+    ],
+    "author": "yezihaohao",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/yezihaohao/react-lib-creator/issues"
+    },
+    "homepage": "https://github.com/yezihaohao/react-lib-creator#readme",
+    "typings": "./lib/index.d.ts",
+    "files": [
+        "lib"
+    ],
+    "devDependencies": {
+        "jest": "^24.9.0",
+        "rollup": "^1.19.4",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-typescript2": "^0.22.1",
+        "ts-node": "^8.3.0",
+        "typescript": "^3.5.3"
+    },
+    "dependencies": {
+        "@types/fs-extra": "^8.0.0",
+        "chalk": "^2.4.2",
+        "commander": "^3.0.0",
+        "fs-extra": "^8.1.0"
+    }
+}

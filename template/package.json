@@ -1,0 +1,44 @@
+{
+    "name": "react-lib",
+    "version": "1.0.0",
+    "description": "react library",
+    "main": "./lib/index.cjs.js",
+    "module": "./lib/index.esm.js",
+    "scripts": {
+        "test": "jest",
+        "build": "tsc -p ./ && rollup -c",
+        "dev": "rollup -c -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yezihaohao/react-lib.git"
+    },
+    "keywords": [
+        "react",
+        "react-lib",
+        "cli",
+        "tool",
+        "rollup"
+    ],
+    "author": "yezihaohao",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/yezihaohao/react-lib/issues"
+    },
+    "homepage": "https://github.com/yezihaohao/react-lib#readme",
+    "typings": "./lib/index.d.ts",
+    "files": [
+        "lib"
+    ],
+    "devDependencies": {
+        "jest": "^24.9.0",
+        "rollup": "^1.19.4",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-typescript2": "^0.22.1",
+        "typescript": "^3.5.3"
+    },
+    "peerDependencies": {
+        "react": "^16.9.0",
+        "@types/react": "^16.9.2"
+    }
+}
