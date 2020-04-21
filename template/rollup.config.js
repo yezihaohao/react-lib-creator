@@ -1,5 +1,6 @@
 import nodeResolve from 'rollup-plugin-node-resolve';
 import typescriptPlugin from 'rollup-plugin-typescript2';
+import { eslint } from 'rollup-plugin-eslint';
 import pkg from './package.json';
 
 function forUmd() {
@@ -7,12 +8,13 @@ function forUmd() {
         name: pkg.name,
         globals: {
             react: 'React',
+            'react-dom': 'ReactDom',
         },
     };
 }
 function fromSource(format) {
     return {
-        input: 'src/index.ts',
+        input: 'src/index.tsx',
         external: ['react'],
         output: {
             ...(format === 'umd' && forUmd()),
@@ -21,12 +23,13 @@ function fromSource(format) {
             sourcemap: true,
         },
         plugins: [
+            eslint(),
             nodeResolve({
                 extensions: ['.ts', '.tsx'],
-                mainFields: ['module', 'main']
+                mainFields: ['module', 'main'],
             }),
             typescriptPlugin(),
         ],
     };
 }
-export default [...['esm', 'cjs', 'umd'].map(format => fromSource(format))];
+export default [...['esm', 'cjs', 'umd'].map((format) => fromSource(format))];

@@ -1,0 +1,14 @@
+/*
+ * File: .eslintrc.json
+ * Desc: eslint
+ * File Created: 2020-04-21 15:19:37
+ * Author: chenghao
+ * ------
+ * Copyright 2020 - present, chenghao
+ */
+{
+    "extends": ["react-app"],
+    "rules": {
+        "no-sequences": 0
+    }
+}
