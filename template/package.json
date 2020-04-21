@@ -32,6 +32,7 @@
         "@types/react-dom": "^16.9.6",
         "@typescript-eslint/eslint-plugin": "^2.29.0",
         "@typescript-eslint/parser": "^2.29.0",
+        "babel-eslint": "^10.1.0",
         "eslint-config-react-app": "^5.2.1",
         "eslint-plugin-flowtype": "^4.7.0",
         "eslint-plugin-import": "^2.20.2",
